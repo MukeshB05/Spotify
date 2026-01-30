@@ -20,7 +20,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",        # Vite
         "http://localhost:3000",        # React
-        "https://musify-harsh.vercel.app",
+        "https://spotify-by-mukesh.vercel.app/",
         "http://127.0.0.1:8000"
     ],
     allow_credentials=True,
@@ -30,7 +30,7 @@ app.add_middleware(
 
 CLIENT_ID = os.getenv("SPOTIPY_CLIENT_ID")
 CLIENT_SECRET = os.getenv("SPOTIPY_CLIENT_SECRET")
-REDIRECT_URI = os.getenv("SPOTIPY_REDIRECT_URI") or  "https://spotify-to-musify.vercel.app/"
+REDIRECT_URI = os.getenv("SPOTIPY_REDIRECT_URI") or  "https://spotify-by-mukesh.vercel.app//"
 
 
 
